@@ -1,8 +1,6 @@
 @font-face{
 	font-family: OpenSans-Regular;
 	src: url(../fonts/OpenSans-Regular.ttf);
-	font-family: Futura Medium;
-	src: url(../fonts/Futura Medium.ttf);
 	font-family: Justus-ItalicOldstyle;
 	src: url(../fonts/Justus-ItalicOldstyle.ttf);	
 }
@@ -21,7 +19,7 @@ img{
 	margin-bottom: 4px;
 }
 h3{
-	font-family: Futura Medium;
+	font-family: Futura;
 	font-size: 30px;
 }
 td{
@@ -49,7 +47,7 @@ p.comment{
 	font-family: Justus-ItalicOldstyle;
 }
 .font-futura{
-	font-family: Futura Medium;
+	font-family: Futura;
 	font-size: 12px;
 }
 .font-sans{
@@ -116,7 +114,7 @@ p.comment{
 	margin: 10px auto;
 	border: 1px solid #222;
 	border-radius: 50%;
-	font-family: Futura Medium;
+	font-family: Futura;
 	font-size: 18px;
 	text-align: center;
 }
@@ -127,7 +125,7 @@ p.comment{
 	margin: 10px auto;
 	border: 1px solid #999999;
 	border-radius: 50%;
-	font-family: Futura Medium;
+	font-family: Futura;
 	font-size: 18px;
 	text-align: center;
 }
