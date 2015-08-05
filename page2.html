@@ -3,6 +3,7 @@
 	<head>
 		<script src="js/jquery-1.11.3.min.js"></script>
 		<script src="js/main.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 		<title>decorist-homework</title>
 		<meta charset="windows-1251">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -17,54 +18,51 @@
 		</div>
 		<div class="main-area text-center">
 			<h3>COMPLETE YOUR ORDER</h3>
-			<p class="comment font-justus not-active">Making interior design personal, affordable and easy</p>
+			<p class="comment font-justus f23 not-active">Making interior design personal, affordable and easy</p>
 			<div class="nav-circles">
 				<div class="horizontal"></div>
 				<div class="nav-table main-area">
 					<table border="0" class="levels">
 						<tr class="circles">
-							<td>
-								<div class="circle not-active">1</div>
-							</td>
-							<td>
-								<div class="circle-active active">2</div>
-							</td>
+							<td><div class="circle not-active">1</div></td>
+							<td><div class="circle-active active">2</div></td>
 							<td><div class="circle not-active">3</div></td>
 						</tr>
 						<tr>
-							<td class="not-active font-justus">View Cart</td>
-							<td class="active font-justus">Payment</td>			
-							<td class="not-active font-justus">Additional Info</td>
+							<td class="not-active font-justus f23">View Cart</td>
+							<td class="active font-justus f23">Payment</td>			
+							<td class="not-active font-justus f23">Additional Info</td>
 						</tr>
 					</table>
 				</div>
 			</div>
-			<div style="display: block;">
+			<div>
 				<div width="100%">
 				<div class="cart f_left">
-					<div class="active font-justus">Your Billing Information</div>
+					<div class="active font-justus f23">Your Billing Information</div>
 					<div class="hline"></div>
-				<form>
+				<form data-toggle="validator" role="form">
 				  	<div class="form-group f_left">
-				    	<label class="active font-futura f-normal">FIRST NAME</label>
-				    	<input class="form-control form-size" style="width: 192px;" required>
+				    	<label for="inputName" class="control-label active font-futura f-normal">FIRST NAME</label>
+				    	<input class="req control-label form-control form-size w192" required>
 				  	</div>
 				  	<div class="form-group">
 				    	<label class="active font-futura f-normal">LAST NAME</label>
-				    	<input class="form-control form-size" style="width: 192px;" required>
+				    	<input class="req form-control form-size w192" required>
 				  	</div>
 				  	<div class="form-group">
 				    	<label class="active font-futura f-normal">ZIP CODE</label>
-				    	<input class="form-control form-size" style="width: 100px;" required>
+				    	<input class="req form-control form-size w100" required>
 				  	</div>
 				  	<div class="form-group">
 				    	<label class="active font-futura f-normal">CARD NUMBER</label>
-				    	<input class="form-control form-size" style="width: 264px;" required>
+				    	<input class="req form-control form-size w264" required>
 				  	</div>
+				  	<div><input required class="hide"></div>
 				  	<div class="form-group f_left">
 				    	<label class="active font-futura f-normal">EXPIRATION DATE</label>
 					    	<div class="one-line">
-						    	<select class="form-control form-size f_left" style="width: 70px;" required>
+						    	<select class="form-control form-size f_left inn w70">
 									<option>1</option>
 								  	<option>2</option>
 									<option>3</option>
@@ -78,7 +76,7 @@
 									<option>11</option>
 								  	<option>12</option>
 						    	</select>
-						    	<select class="form-control form-size" style="width: 80px;">
+						    	<select class="form-control form-size inn w80">
 						    		<option>2013</option>
 								  	<option>2014</option>
 									<option>2015</option>
@@ -89,7 +87,7 @@
 				  	</div>
 				  	<div class="form-group">
 				    	<label class="active font-futura f-normal">CVV</label>
-				    	<input class="form-control form-size" style="width: 54px;">
+				    	<input class="req form-control form-size w54" required>
 				  	</div>	  	
 				  	<div class="checkbox">
 				    	<label class="active font-futura f-normal">
@@ -97,15 +95,37 @@
 				    	</label>
 				  	</div>
 					<div class="hline"></div>
-				</form>
-					<div>
-							<button type="button" class="f_right font-futura button" onclick="location.href='http://yusti.github.io/decorist_homework/page3'">PLACE ORDER</button>
-							<a href="https://www.decorist.com/?next=/dashboard/#main" class="font-futura f_right link-color">HAPPINESS GUARANTEE!</a>
+
+					<div  class="form-group">
+						<button type="submit" id="valid" class="f_right font-futura button"> PLACE ORDER</button>
+						<a href="#guarantee" data-toggle="modal" class="font-futura f_right link-color">HAPPINESS GUARANTEE!</a>
 					</div>
+					</form>
+						<div class="modal fade" id="guarantee" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content size center-block">
+									<div class="modal-header">
+										<div class="font-futura text-center f24">HAPPINES GUARANTEE</div>
+									</div>
+									<div class="modal-body">
+										<p class="text-center f18 font-justus">Our Promise to You</p> 
+
+										<p class="font-sans f14">Decorist is all about you. When you order a designer service one of our experienced designers will review your profile, questionnaire, photos and anything else you have provided. They will develop a recommendation that is personal - one that reflects your lifestyle, style and budget.</p>
+
+										<p class="font-sans f14">We really want you to love your recommendations and use them to transform your space. If you are not delighted with your recommendations please email us and we will make it right. We will work to make sure you get recommendations that make you, and your room, happy so you can fall in love with your home all over again. 
+										</p>
+										<p class="text-center f18 font-justus">About Decorist Designers</p> 
+
+										<p class="font-sans f14">Decorist designers are carefully selected for their ability to deliver great recommendations that reflect your style and budget. Our designers know which products work, how to pull a look together quickly and easily with a focus on key elements that will give you the most bang for your buck. Their product recommendations are made without consideration of any product commissions - all recommendations are based on what the designer thinks will look great and work for your space based on experience -- period. </p>
+									</div>
+								</div>
+							</div>
+						</div>
 				</div>
 				<img src="images/decor_1_page.png">
 				</div>
-			<div class="clear-float"></div>
+
+				<div class="clear-float"></div>
 			</div>
 		</div>
 		<div class="nav-bottom">

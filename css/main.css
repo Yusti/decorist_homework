@@ -1,3 +1,11 @@
+@font-face{
+	font-family: OpenSans-Regular;
+	src: url(../fonts/OpenSans-Regular.ttf);
+	font-family: Futura Medium;
+	src: url(../fonts/Futura Medium.ttf);
+	font-family: Justus-ItalicOldstyle;
+	src: url(../fonts/Justus-ItalicOldstyle.ttf);	
+}
 *{
 	margin: 0;
 	padding: 0;
@@ -8,6 +16,9 @@ body {
 }
 ul{
 	list-style: none;
+}
+img{
+	margin-bottom: 4px;
 }
 h3{
 	font-family: Futura Medium;
@@ -36,12 +47,13 @@ p.comment{
 }
 .font-justus{
 	font-family: Justus-ItalicOldstyle;
-	font-style: italic;
-	font-size: 23px;
 }
 .font-futura{
 	font-family: Futura Medium;
 	font-size: 12px;
+}
+.font-sans{
+	font-family: OpenSans-Regular;
 }
 .nav_top{
 	height: 73px;
@@ -64,12 +76,10 @@ p.comment{
 	font-size: 16px;
 }
 .log-but{
-	margin-top: -43px;
-	margin-right: 145px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	padding-right: 10px;
-	padding-left: 10px;
+	height: 34px;
+	margin-top: -47px;
+	margin-right: 10%;
+	padding:8px 20px 8px 20px;
 	border-radius: 5px;
 	font-size: 14px;
 	color: #ffffff;
@@ -78,10 +88,8 @@ p.comment{
 	border:none;
 }
 .button{
-	padding-top: 5px;
-	padding-bottom: 5px;
-	padding-right: 10px;
-	padding-left: 10px;
+	height: 34px;
+	padding:8px 20px 8px 20px;
 	border-radius: 5px;
 	font-size: 14px;
 	color: #ffffff;
@@ -93,10 +101,7 @@ p.comment{
 .button-grey{
 	border:none;
 	margin-right: 10px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	padding-right: 10px;
-	padding-left: 10px;
+	padding:8px 20px 8px 20px;
 	border-radius: 5px;
 	font-size: 14px;
 	color: #78a8bb;
@@ -106,28 +111,28 @@ p.comment{
 }
 .circle-active{
 	background: #ffffff;
-	width: 35px;
-	height: 35px;
+	width: 38px;
+	height: 38px;
 	margin: 10px auto;
 	border: 1px solid #222;
 	border-radius: 50%;
-	font-family: FuturaBTMedium;
-	font-size: 10px;
+	font-family: Futura Medium;
+	font-size: 18px;
 	text-align: center;
 }
 .circle{
 	background: #ffffff;
-	width: 35px;
-	height: 35px;
+	width: 38px;
+	height: 38px;
 	margin: 10px auto;
 	border: 1px solid #999999;
 	border-radius: 50%;
-	font-family: FuturaBTMedium;
-	font-size: 10px;
+	font-family: Futura Medium;
+	font-size: 18px;
 	text-align: center;
 }
 .nav-table{
-	top: 187px;
+	top: 186px;
 	position: absolute;
 }
 .nav-circles{
@@ -135,14 +140,14 @@ p.comment{
 }
 .horizontal
 {
-	height: 30%;
+	height: 38px;
   	width: 940px;
   	border-bottom: 2px solid #ededed;
   	position: relative;
 }
 .levels{
-	margin-left: 12%;
-	width: 76%;
+	margin-left: 6%;
+	width: 88%;
 	line-height: 35px;
 	text-align: center;
 }
@@ -174,7 +179,7 @@ p.comment{
 .link-color{
 	padding-left: 2%;
 	color: #78a8bb;
-	margin-top: 17px;
+	margin-top: 19px;
 	margin-bottom: 17px;
 	margin-right: 10px;
 }
@@ -249,7 +254,7 @@ p.comment{
 }
 .congrats{
 	border-radius: 5px;
-	margin: 10px;
+	margin: 10px 20px 10px 0px;
 	padding: 10px;
 	background: #86c271;
 }
@@ -258,17 +263,134 @@ p.comment{
 	overflow:hidden;
 	clear:both;
 }
-.pb{
-	padding-bottom: 17px;
+.fs12{
+	font-size: 12px;
 }
 .fs13{
 	font-size: 13px;
 }
-.font-OS{
-	font-family:OpenSans-Regular;
+.fs14{
+	font-size: 14px;
+}
+.fs15{
+	font-size: 15px;
 }
 .bord{
 	border-style: solid;
 	border-color: #f7f7f7;
 	border-width: 1px;
+}
+.f14{
+	font-size: 14px;
+}
+.f18{
+	font-size: 18px;
+	margin-top: 24px;
+	margin-bottom: 18px;
+}
+.f24{
+	font-size: 24px;
+	margin-bottom: 18px;
+}
+.f23{
+	font-size: 23px;
+}
+.size{
+	width: 108%;
+	margin: 10% -5%;
+	padding: 24px 21px 28px 20px;
+}
+.close {
+	position: absolute;
+	right: -20px;
+	top: -20px;
+}
+.res-vert{
+	resize: vertical;
+}
+.hide{
+	visibility: hidden;
+	height: 0px;
+}
+.form-control{
+	box-shadow: 0px 1px 0px 0px #ffffff;
+	box-shadow: inset 0px 1px 2px 0px rgba(255,255,255);
+}
+.inn{
+	background: #f7f7f7;
+}
+.w340{
+	width: 340px;
+}
+.w264{
+	width: 264px;
+}
+.w230{
+	width: 230px;
+}
+.w192{
+	width: 192px;
+}
+.w162{
+	width: 162px;
+}
+.w150{
+	width: 150px;
+}
+.w100{
+	width: 100px;
+}
+.w80{
+	width: 80px;
+}
+.w70{
+	width: 70px;
+}
+.w54{
+	width: 54px;
+}
+.congr{
+	color:#fff;
+	font-size:18px;
+}
+.congr-small{
+	color:#c5fbd4;
+	font-size:17px;
+}
+.form-inline{
+	margin-top: 22px;
+}
+.f-norm{
+	font-weight: normal;
+}
+.pad-small{
+	padding-bottom: 17px;
+}
+.pad-large{
+	padding-bottom: 34px;
+}
+.pad-mid{
+	padding-bottom: 28px;
+}
+#text1{
+	width: 100%;
+	height: 90px;
+}
+.clr-gray{
+	color: #dedede;
+}
+.marg-mid{
+	margin-bottom: 30px;
+}
+.marg-rt{
+	margin-right: 30%;
+}
+.marg-top{
+	margin-top: auto;
+	margin-bottom: 22px;
+}
+@media screen and (max-width: 1200px){
+	.decor[class="hide"]{
+		display: none !important;
+	}
 }

@@ -3,6 +3,7 @@
 	<head>
 		<script src="js/jquery-1.11.3.min.js"></script>
 		<script src="js/main.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 		<title>decorist-homework</title>
 		<meta charset="windows-1251">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -17,82 +18,76 @@
 		</div>
 		<div class="main-area text-center">
 			<h3>COMPLETE YOUR ORDER</h3>
-			<p class="comment font-justus not-active">Making interior design personal, affordable and easy</p>
+			<p class="comment font-justus f23 not-active">Making interior design personal, affordable and easy</p>
 			<div class="nav-circles">
 				<div class="horizontal"></div>
 				<div class="nav-table main-area">
 					<table border="0" class="levels">
 						<tr class="circles">
-							<td>
-								<div class="circle not-active">1</div>
-							</td>
-							<td>
-								<div class="circle not-active">2</div>
-							</td>
+							<td><div class="circle not-active">1</div></td>
+							<td><div class="circle not-active">2</div></td>
 							<td><div class="circle-active active">3</div></td>
 						</tr>
 						<tr>
-							<td class="not-active font-justus">View Cart</td>
-							<td class="not-active font-justus">Payment</td>			
-							<td class="active font-justus">Additional Info</td>
+							<td class="not-active font-justus f23">View Cart</td>
+							<td class="not-active font-justus f23">Payment</td>			
+							<td class="active font-justus f23">Additional Info</td>
 						</tr>
 					</table>
 				</div>
 			</div>
 			<div>
 				<div width="100%" class="congrats">
-				<div style="color:#fff; font-size:18px;" class="font-futura">CONGRATS! YOUR ORDER HAS BEEN PROCESSED</div>
-				<div style="color:#c5fbd4; font-size:17px;" class="font-justus">To get your advice please complete the form below. This can be done now or you can return to it later</div>
+				<div class="font-futura congr">CONGRATS! YOUR ORDER HAS BEEN PROCESSED</div>
+				<div class="font-justus congr-small">To get your advice please complete the form below. This can be done now or you can return to it later</div>
 				</div>
 			</div>
-			<div style="display: block;">
+			<div>
 				<div width="100%">
 				<div class="cart f_left">
-					<div class="active font-justus">Basic Information</div>
+					<div class="active font-justus f23">Basic Information</div>
 					<div class="hline"></div>
-					<form class="form-inline" style="margin-top: 22px;">
-					  	<div class="form-group pb">
-					    	<label for="exampleInputName2" style="font-weight:normal">I am looking for a</label>
-					    	<input type="text" class="form-control fs13" style="width: 162px;" placeholder="product (ex. chair, sofa)">
+					<form class="form-inline">
+					  	<div class="form-group">
+					  		<div class="one-line pad-small font-sans fs14">
+						    	<span for="exampleInputName2" class="f-norm">I am looking for a</span>
+						    	<input type="text" class="form-control w162" placeholder="product (ex. chair, sofa)">
+						    	<span for="exampleInputName2" class="f-norm">for my</span>
+						    	<input type="text" class="form-control w230" placeholder="room (ex. living room, bedroom)">
+						    	<span for="exampleInputName2" class="f-norm">in</span>
+						    </div>
+						    <div class="one-line pad-large font-sans fs14">
+							    <input type="text" class="form-control w150" placeholder="color or materials">
+							    <span for="exampleInputName2" class="f-norm">and my budget is</span>
+						    	<input type="text" class="form-control w150" placeholder="price ( ex. 500$)">
+						    </div>
 					  	</div>
-					  	<div class="form-group pb">
-					    	<label for="exampleInputName2" style="font-weight:normal">for my</label>
-					    	<input type="text" class="form-control fs13" style="width: 210px;" placeholder="room (ex. living room, bedroom)">
-					    	<label for="exampleInputName2" style="font-weight:normal">in</label>
-					  	</div>
-					  	<div class="form-group pb">
-					    	<input type="text" class="form-control fs13" style="width: 150px;" placeholder="color or materials">
-					  	</div>
-					  	<div class="form-group pb">
-					    	<label for="exampleInputName2" style="font-weight:normal">and my budget is</label>
-					    	<input type="text" class="form-control fs13" style="width: 150px;" placeholder="price ( ex. 500$)">
-					  	</div>
-					  	<div class="form-group pb">
-					    	<label for="exampleInputName2" style="font-weight:normal; font-size:13px;">ANY ADDITIONAL INFORMATION SHARE HELPS US GIVE THE BEST RECCOMENDATIONS</label>
-					    	<input type="text" class="form-control fs13" id="text1" style="width: 100%; height:70px;" placeholder="Helpful information would be approximate dimensions of the product you're looking for, other items your planning on replacing in your room, materials you prefer, materials or colors you like or do not like, etc.">
+					  	<div class="form-group pad-mid">
+					    	<label for="exampleInputName2" class="f-norm font-futura fs13">ANY ADDITIONAL INFORMATION SHARE HELPS US GIVE THE BEST RECCOMENDATIONS</label>
+					    	<textarea type="text" class="form-control res-vert font-sans fs14" id="text1" placeholder="Helpful information would be approximate dimensions of the product you're looking for, other items your planning on replacing in your room, materials you prefer, materials or colors you like or do not like, etc."></textarea>
 					  	</div>
 					</form>
-					<div class="active font-justus">Upload Photos</div>
+					<div class="active font-justus f23">Upload Photos</div>
 					<div class="hline"></div>
-					<div class="font-OS">The best photos capture the key features of the room (main furniture, layout, room features) from 2 or 3 corners of the room.  Capture key colors, textures and patterns that you want to keep.</div>
-					<div class="bord">
+					<div class="font-sans fs14 marg-top">The best photos capture the key features of the room (main furniture, layout, room features) from 2 or 3 corners of the room.  Capture key colors, textures and patterns that you want to keep.</div>
+					<div class="bord marg-mid">
 						<img src="images/photo-load.png" class="center-block">
-						<p class="font-futura text-center" style="color:#dedede;font-size:15px;">DRAG AND DROP PHOTOS HERE</p>
-						<p class="font-futura text-center"  style="color:#dedede;font-size:12px;">OR <a href="#">SELECT FILE TO UPLOAD</a></p>
+						<p class="font-futura text-center clr-gray fs15">DRAG AND DROP PHOTOS HERE</p>
+						<p class="font-futura text-center clr-gray fs12">OR <a href="#">SELECT FILE TO UPLOAD</a></p>
 					</div>
-					<div class="">
 					<div>
-						<span class="active font-justus">Additional Information</span>
+					<div>
+						<span class="active font-justus f23">Additional Information</span>
 						<span class="not-active font-justus">(Optional)</span>
 					</div>
 					<div class="hline"></div>
-					<div style="display:block;">
+					<div>
 						<div class="form-group">
 					    	<label class="active font-futura f-normal">PASTE A URL FOR A PINTEREST BOARD, HOUZZ IDEA BOOK OR OTHER WEBSITE</label>
-					    	<input class="form-control form-size" style="width: 340px;" required>
+					    	<input class="form-control form-size w340" required>
 					  	</div>
-					  	<p class="active font-futura f-normal">SHARE ONE OF YOUR DECORIST DESIGN BOARD</p>
-					  	<button type="button" class="font-futura button-grey" onclick="#">ATTACH DECORIST DESIGN BOARD</button>
+					  	<label class="active font-futura f-normal marg-rt">SHARE ONE OF YOUR DECORIST DESIGN BOARD</label>
+					  	<button type="button" class="font-futura button-grey marg-top" onclick="#">ATTACH DECORIST DESIGN BOARD</button>
 					</div>
 				  	<div class="hline"></div>
 				  	<div>

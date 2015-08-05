@@ -3,6 +3,7 @@
 	<head>
 		<script src="js/jquery-1.11.3.min.js"></script>
 		<script src="js/main.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 		<title>decorist-homework</title>
 		<meta charset="windows-1251">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -17,7 +18,7 @@
 		</div>
 		<div class="main-area text-center">
 			<h3>COMPLETE YOUR ORDER</h3>
-			<p class="comment font-justus not-active">Making interior design personal, affordable and easy</p>
+			<p class="comment font-justus f23 not-active">Making interior design personal, affordable and easy</p>
 			<div class="nav-circles">
 				<div class="horizontal"></div>
 				<div class="nav-table main-area">
@@ -32,9 +33,9 @@
 							<td><div class="circle not-active">3</div></td>
 						</tr>
 						<tr>
-							<td class="active font-justus">View Cart</td>
-							<td class="not-active font-justus">Payment</td>			
-							<td class="not-active font-justus">Additional Info</td>
+							<td class="active font-justus f23">View Cart</td>
+							<td class="not-active font-justus f23">Payment</td>			
+							<td class="not-active font-justus f23">Additional Info</td>
 						</tr>
 					</table>
 				</div>
@@ -42,9 +43,9 @@
 			<div>
 				<div width="100%">
 					<div class="cart f_left">
-						<div><span class="active font-justus">Your Shopping Cart</span>
+						<div><span class="active font-justus f23">Your Shopping Cart</span>
 						<a href="https://www.decorist.com/?next=/dashboard/#main" class="font-futura link-color">CONTINUE SHOPPING</a></div>
-						<table class="order-table table f_left">
+						<table class="order-table table f_left font-futura">
 							<tr>
 								<td>ITEM</td>
 								<td>QUANTITY</td>
@@ -54,7 +55,7 @@
 							<tr>
 								<td class="one-line">
 									<img src="images/package.png" id="img-tab">
-									PERSONALE SHOPPER PACKAGE
+									PERSONAL SHOPPER PACKAGE
 								</td>
 								<td class="one-line">
 									<img src="images/minus-circle.png" id="minus"></img>
@@ -63,7 +64,6 @@
 								</td>
 								<td id="price">$69.00</td>
 								<td>
-									<BR>
 									<div class="one-line">
 										<img src="images/del-circle.png" id="delete">
 										REMOVE
@@ -72,12 +72,6 @@
 							</tr>	
 						</table>
 						<div class="purchase-info">
-							<a href="" class="font-futura f_left link-color" id="promo"></BR></BR></BR></BR>ADD PROMO CODE</a>
-							<form id="promo-code" style="visibility: hidden;">
-							  	<div class="form-group f_left">
-							    	<input class="form-control form-size" style="width: 192px;" required>
-							  	</div>
-							</form>
 							<table class="table-right f_right">
 								<tr class="not-active font-futura">
 									<td>SUBTOTAL</td>
@@ -99,10 +93,30 @@
 						</div>
 						<div>
 							<button type="button" class="f_right font-futura button" onclick="location.href='http://yusti.github.io/decorist_homework/page2'">NEXT-PAYMENT</button>
-							<a href="https://www.decorist.com/?next=/dashboard/#main" class="font-futura f_right link-color">HAPPINESS GUARANTEE!</a>
+							<a href="#guarantee" data-toggle="modal" class="font-futura f_right link-color">HAPPINESS GUARANTEE!</a>
+						</div>
+						<div class="modal fade" id="guarantee" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content size center-block">
+									<div class="modal-header">
+										<div class="font-futura text-center f24">HAPPINES GUARANTEE</div>
+									</div>
+									<div class="modal-body">
+										<p class="text-center f18 font-justus">Our Promise to You</p> 
+
+										<p class="font-sans f14">Decorist is all about you. When you order a designer service one of our experienced designers will review your profile, questionnaire, photos and anything else you have provided. They will develop a recommendation that is personal - one that reflects your lifestyle, style and budget.</p>
+
+										<p class="font-sans f14">We really want you to love your recommendations and use them to transform your space. If you are not delighted with your recommendations please email us and we will make it right. We will work to make sure you get recommendations that make you, and your room, happy so you can fall in love with your home all over again. 
+										</p>
+										<p class="text-center f18 font-justus">About Decorist Designers</p> 
+
+										<p class="font-sans f14">Decorist designers are carefully selected for their ability to deliver great recommendations that reflect your style and budget. Our designers know which products work, how to pull a look together quickly and easily with a focus on key elements that will give you the most bang for your buck. Their product recommendations are made without consideration of any product commissions - all recommendations are based on what the designer thinks will look great and work for your space based on experience -- period. </p>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-					<img src="images/decor_1_page.png">
+					<img class="decor" src="images/decor_1_page.png">
 				</div>
 				<div class="clear-float"></div>
 			</div>
